@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-commerce</title>
-    <link rel="stylesheet" href="./sass/main.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
     <header>
@@ -17,7 +17,7 @@
           <div class="nav-items">
             <img src="./assets/images/header/LOGO.svg" alt="LOGO" />
             <div class="btn-inp">
-              <button>
+              <button id="katalog">
                 <div class="burger">
                   <div class="line"></div>
                   <div class="line"></div>
@@ -25,6 +25,7 @@
                 </div>
                 <p>Каталог</p>
               </button>
+              <div class="open"></div>
               <input type="search" placeholder="Найти товар" />
             </div>
             <div class="choose-collect">
@@ -40,14 +41,51 @@
                 <i class="bx bx-cart"></i>
                 <p>Корзина</p>
               </div>
-              <div class="owner">
+              <div class="modal">
+                <div class="modal-content">
+                  <button id="btn-close">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18.3536 5.64645C18.5488 5.84171 18.5488 6.15829 18.3536 6.35355L6.35355 18.3536C6.15829 18.5488 5.84171 18.5488 5.64645 18.3536C5.45118 18.1583 5.45118 17.8417 5.64645 17.6464L17.6464 5.64645C17.8417 5.45118 18.1583 5.45118 18.3536 5.64645Z"
+                        fill="#414141"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.64645 5.64645C5.84171 5.45118 6.15829 5.45118 6.35355 5.64645L18.3536 17.6464C18.5488 17.8417 18.5488 18.1583 18.3536 18.3536C18.1583 18.5488 17.8417 18.5488 17.6464 18.3536L5.64645 6.35355C5.45118 6.15829 5.45118 5.84171 5.64645 5.64645Z"
+                        fill="#414141"
+                      />
+                    </svg>
+                  </button>
+                  <h1 class="hash">Вход</h1>
+
+                  <p class="parag">Телефон</p>
+                  <form action="Number">
+                    <input class="inn1" type="Number" placeholder="+7 912" />
+                  </form>
+                  <button class="vhodBUT">Вход</button>
+                  <div class="butts1">
+                    <button class="vhodBUT1">Регистрация</button>
+                    <button class="vhodBUT1">Забыли пароль?</button>
+                  </div>
+                </div>
+              </div>
+              <button class="owner" id="btn-open">
                 <img
                   src="./assets/images/header/avatar Aleksey.svg"
                   alt="Aleksey"
                 />
                 <p>Алексей</p>
                 <i class="bx bx-chevron-down"></i>
-              </div>
+              </button>
             </div>
           </div>
         </div>
@@ -62,336 +100,350 @@
       </div>
     </header>
     <main>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis aut
-        autem cum blanditiis, quam eum earum sint, perferendis eius quasi
-        voluptas et placeat ad nihil hic rem ullam minima accusantium. Rem
-        eligendi, dolor neque iste placeat iusto cumque, assumenda inventore,
-        quia pariatur numquam dolorem. Praesentium maiores, recusandae a
-        suscipit sapiente provident similique. Reprehenderit qui illum saepe
-        rerum similique non id ratione corporis cumque quam, nam cum optio hic
-        sint deleniti sed ad. Vel doloremque aspernatur repellendus totam,
-        tenetur, optio labore numquam aperiam placeat animi assumenda voluptas,
-        hic error rerum! Pariatur suscipit harum iusto fugit eos non veniam
-        vitae, nostrum dolorum possimus nisi asperiores atque dolor perferendis
-        molestias vero beatae illo aspernatur, cumque dignissimos ex placeat
-        magni animi soluta. Odit veniam, suscipit voluptates repellat minus
-        doloribus voluptatem autem molestiae distinctio nostrum illo expedita!
-        Sit nostrum libero aspernatur quisquam ea amet illo officiis voluptates,
-        quo, assumenda alias provident tempora ipsa. Corporis vitae architecto
-        consequuntur ex officiis dolorem mollitia deleniti sint unde esse eaque
-        magni recusandae, sit voluptates qui cum, debitis molestias distinctio
-        eligendi. Consectetur omnis corrupti enim explicabo ut sunt
-        reprehenderit! Cum, officia! Ipsa quis quia voluptas tempora,
-        voluptatibus ullam reiciendis molestiae, facilis asperiores officia,
-        rerum illo consequatur odio culpa non aliquam recusandae dicta dolorum
-        optio quaerat? Harum eaque quas inventore eveniet ipsam quo, debitis qui
-        consequuntur praesentium similique vitae vero mollitia. Quasi rem magnam
-        repudiandae, aspernatur doloribus voluptatum hic dolorem minus provident
-        dignissimos cupiditate iure iste animi quas facilis magni atque illo id
-        nihil blanditiis vel sunt ducimus itaque? Iure suscipit sint temporibus
-        magni dolorem sed possimus libero numquam eos! Dolor, incidunt nobis.
-        Quod aliquid quibusdam consequuntur hic sit sapiente, aliquam alias
-        veritatis nihil quisquam possimus ipsa laudantium veniam tempore
-        reprehenderit et. Consequatur, sint cumque a sapiente consectetur
-        delectus corrupti? Animi, quidem. Beatae assumenda excepturi nobis
-        voluptates maiores alias perspiciatis illo ab quidem. Repellendus vero,
-        dolorem voluptas fugiat cumque voluptatibus quod quisquam illum, esse
-        iusto ullam. Minus doloribus ut, iure odio suscipit officiis. Fugiat
-        nostrum eveniet ad quo vitae, sed esse, laborum doloremque ea rerum,
-        voluptatem mollitia est. Eius dolor nam deserunt. Vel corporis iusto
-        molestias, quia debitis quae earum explicabo error facere reprehenderit
-        hic cum quos totam eos repellendus voluptas numquam accusantium adipisci
-        dignissimos autem quidem ex. Ratione, ea. Impedit nam neque, corporis
-        cumque voluptatem ea ipsa repellendus. Inventore, ipsa? Dolorem, quae! A
-        numquam facere laborum labore magni consequatur modi illum nulla. Qui
-        eveniet consectetur neque. Ut est labore laborum, maiores nam qui
-        facilis quaerat vel a consequatur praesentium laboriosam, in molestiae.
-        At praesentium cum eos odit repudiandae aspernatur dolorem tempora enim
-        dicta distinctio officia temporibus pariatur itaque modi, dolor quisquam
-        ullam quo nulla minus quasi, sapiente reiciendis accusantium placeat
-        commodi? Eius incidunt animi rem alias? Corrupti sit rem quidem ad nisi
-        deserunt est velit maiores officia necessitatibus, itaque quasi. Est
-        nemo veritatis alias numquam necessitatibus! Libero quisquam aliquid ab
-        nemo recusandae nisi, ullam accusantium omnis quidem ad blanditiis magni
-        odio! Dignissimos in voluptate dolor illum incidunt error voluptatem
-        sapiente iure esse quae hic corrupti iste impedit vel, sit nesciunt
-        culpa alias maiores nihil enim aspernatur expedita tempore libero
-        reiciendis. Mollitia, culpa consectetur! Illo, exercitationem soluta.
-        Similique in qui, ducimus quo, sunt possimus rem dolor minima velit
-        labore atque corrupti et dolorum sequi nihil est impedit? Ipsam enim
-        culpa, similique consequatur vel ea at, architecto voluptate numquam
-        nobis laboriosam sapiente officiis laudantium nemo eaque magni ad.
-        Aspernatur, saepe numquam? Et, laborum ipsa! Blanditiis sit impedit,
-        aut, tempore eaque, hic exercitationem qui amet aliquam distinctio quos
-        vitae facilis saepe odit dolorum illo a culpa velit pariatur accusamus?
-        Pariatur, quam facere deleniti sint qui facilis, aperiam architecto
-        obcaecati minus eveniet rem eius. Hic, dolores! Quasi odit totam,
-        provident perspiciatis at, laboriosam voluptatum earum nemo
-        exercitationem tenetur possimus magnam ex molestiae tempora! Doloremque
-        tempore nulla odit porro earum sequi recusandae expedita debitis fuga
-        perspiciatis reprehenderit quo, sed dolorum ad maiores cum doloribus sit
-        placeat rerum quia quaerat fugit vitae accusamus! Iste, nisi amet
-        facilis porro neque magnam nobis suscipit accusantium, obcaecati nam
-        numquam rerum id maiores quos sint. Hic facilis blanditiis laudantium
-        architecto sit accusantium dignissimos nisi ex voluptatem? Odio
-        obcaecati, molestias iste quae velit fugit. Omnis fuga qui cum unde
-        delectus molestias numquam adipisci ut quod maiores quibusdam, a
-        doloremque assumenda veritatis atque, consequuntur temporibus explicabo
-        provident et neque! Iure voluptatibus incidunt ut, neque placeat, iusto
-        perspiciatis temporibus rem commodi, et pariatur. Porro voluptas, unde,
-        adipisci odit voluptatum consectetur odio soluta, aliquam natus numquam
-        hic! Ipsa pariatur quam dolorum laboriosam sapiente animi, consequatur
-        quo excepturi magni nemo itaque nulla iusto molestiae aliquam temporibus
-        quas nostrum architecto. Ex in culpa adipisci recusandae eum, cumque
-        delectus. Exercitationem, consequuntur! In dolore explicabo a excepturi
-        illo quia vero accusantium beatae voluptatum, odit mollitia dolorum
-        impedit eligendi at odio reiciendis nobis expedita totam libero,
-        pariatur consequatur! Similique animi iure fugit in ipsum reprehenderit
-        esse aperiam quo incidunt voluptatem dolorem, nobis quia eos, veritatis
-        quibusdam nam neque sint cumque, voluptate aliquid deleniti labore
-        veniam est impedit. Magni similique minus corporis tempore ipsam eius
-        reprehenderit asperiores quod, sed provident, ad inventore earum eaque
-        quam explicabo esse quibusdam. Consequuntur eligendi excepturi sed
-        obcaecati, cupiditate, quo quasi ducimus quam quos nesciunt quibusdam
-        veritatis est. Aspernatur dolorum doloremque, consequatur officiis odit
-        in ullam corporis fugit facilis. Ab consectetur ut corrupti accusantium,
-        ipsam sapiente eius incidunt sed, cupiditate nam iste quasi, at pariatur
-        libero eaque eos a repudiandae aspernatur! Quasi, blanditiis?
-        Repellendus voluptatem quos debitis perspiciatis molestiae eveniet
-        dicta, exercitationem ullam vitae molestias earum sequi tempora quia
-        vero corrupti odit omnis ducimus enim aut inventore ipsam esse! Minima,
-        dolore consectetur explicabo a optio, sequi odio corrupti, magnam at
-        eligendi neque illum rem blanditiis. Inventore aut optio quis tenetur
-        sequi rerum quos doloremque, et laborum debitis voluptas in quia vero
-        veritatis culpa earum, repudiandae voluptatibus, sit assumenda?
-        Similique, adipisci enim. Nulla, non, recusandae itaque repellat
-        provident reprehenderit odit suscipit, laboriosam voluptatum dolorum
-        unde perferendis soluta accusantium repellendus aliquam. Ab animi ullam
-        deleniti. Earum accusantium consectetur nulla quam ducimus maiores quis
-        vitae, fugiat culpa eveniet facilis unde? Dolor illum nostrum voluptatem
-        iusto, quas corporis facilis totam quaerat quo dignissimos, quibusdam,
-        quam in veritatis enim delectus perspiciatis aliquid ipsa mollitia
-        placeat expedita provident quod fugit! Quis earum beatae vitae a
-        molestias omnis reprehenderit tempora in reiciendis sed necessitatibus,
-        assumenda pariatur incidunt aspernatur dolor veritatis quod id quia sunt
-        dolore! Repellat, eaque. Vitae odio ex assumenda repellat modi nobis,
-        aliquid commodi, temporibus eligendi suscipit unde dicta atque
-        consectetur eius. Voluptate harum assumenda expedita architecto
-        obcaecati odit, numquam quidem animi aut est fugit quae perferendis sint
-        sed quisquam ipsam dolor hic iusto eius magni alias consectetur possimus
-        fugiat sunt! Ipsam dolor aperiam enim quos maiores nostrum obcaecati
-        magnam numquam excepturi, voluptas, rerum sint accusamus natus facere
-        est! Ipsam non aut, delectus doloribus in sunt voluptatum dignissimos
-        quibusdam fugit, dolorum eius. Suscipit minima, rerum quisquam omnis
-        ullam neque deleniti cumque nostrum pariatur rem. Eius natus ea
-        perferendis facilis deserunt a reprehenderit, esse repudiandae quibusdam
-        asperiores! Rerum similique unde quam minima nemo debitis reprehenderit
-        voluptatibus delectus recusandae quasi ipsum sapiente inventore atque,
-        perferendis repellat, ut eligendi qui placeat veniam! Vitae excepturi
-        veniam quaerat consectetur ratione laudantium inventore ducimus pariatur
-        explicabo! Praesentium iusto laboriosam officiis eaque accusantium
-        eveniet velit eius nesciunt iste, corrupti distinctio optio iure nemo ut
-        cupiditate aut maxime quo sint similique assumenda harum modi autem
-        tempora. Aut, adipisci. Deserunt provident nemo voluptates perferendis
-        adipisci aliquid explicabo, quo, dolore, deleniti nobis porro voluptatum
-        ratione facilis dolor amet illo! Dolore eligendi, similique dolor et
-        magnam, maxime, rerum doloremque facere perspiciatis laudantium voluptas
-        ipsam laborum dolores repudiandae facilis cum modi harum ex architecto
-        eos obcaecati culpa dicta. Nam praesentium ut blanditiis tempora
-        repellat soluta, ea, tempore, ex dolor itaque totam nihil voluptatem
-        nesciunt quo voluptas distinctio. Optio est provident accusantium eaque
-        voluptas sit ea aliquid placeat! Repellendus totam hic sed inventore,
-        labore minima omnis necessitatibus recusandae voluptas voluptate dolore
-        nam a, cupiditate, exercitationem cum! Expedita quia ipsam ratione ipsum
-        architecto, aut eos quasi recusandae cum blanditiis suscipit dignissimos
-        ipsa facilis molestias officia voluptates voluptas est sit nam nostrum
-        delectus quisquam! Molestiae eveniet maxime nostrum quis, eligendi saepe
-        exercitationem aut temporibus in optio, laborum reiciendis voluptatem.
-        Suscipit eveniet ipsa natus necessitatibus libero, dolore magni quidem
-        eligendi. Fugit nostrum maiores aliquam, rem doloremque ipsam? Delectus
-        qui rerum illo officia laboriosam recusandae laborum itaque vitae
-        perferendis officiis consequatur magnam facere temporibus dolorem labore
-        corrupti culpa excepturi sed nihil autem eaque aut, maiores nesciunt!
-        Dolorum eaque maiores maxime tempora iusto deserunt et itaque omnis
-        ducimus. Fugit corporis officia, quasi et mollitia ipsum harum eveniet.
-        Quia nihil beatae atque aliquid libero voluptatem hic unde saepe
-        obcaecati! Facilis, sit tempore similique reprehenderit ex soluta
-        deleniti vitae neque, qui maiores consequuntur maxime. Repellendus
-        deleniti molestiae suscipit laboriosam doloribus libero eum itaque
-        voluptas sequi, dolores eveniet totam omnis neque quam tenetur nihil
-        adipisci error temporibus non odio debitis nostrum corporis hic?
-        Molestiae aspernatur sed, vitae illo veniam ab porro voluptate
-        voluptates dignissimos totam excepturi beatae dolorum quod nesciunt,
-        odit expedita. Quisquam quod laborum optio in, animi iure aliquam fugiat
-        mollitia veritatis nemo voluptas aperiam fuga asperiores ratione
-        reiciendis obcaecati debitis sapiente numquam, magnam, magni
-        perspiciatis deserunt impedit a earum. Veritatis vero magnam labore! Ab,
-        nulla officiis. Sint eveniet eum inventore alias explicabo similique
-        quo, autem iusto amet minima. Adipisci eius voluptatem laboriosam odit
-        reiciendis doloribus ipsam tempore fugiat hic. Sequi assumenda debitis
-        recusandae alias iusto corrupti reiciendis cum illo id. Sed autem,
-        laudantium a dolore deleniti quisquam voluptatibus atque quo iste ab vel
-        asperiores eos iusto quaerat provident fugiat magnam consequatur, nemo
-        adipisci quidem nesciunt culpa blanditiis assumenda enim? Repudiandae,
-        neque porro nemo explicabo fuga est nulla, eum ad necessitatibus, dolor
-        eligendi! Id at accusamus corrupti minima consectetur! Fuga dolorem,
-        magnam, quisquam id provident aliquam eaque saepe blanditiis
-        exercitationem sit architecto doloremque, illo dicta reiciendis ex a
-        veniam tempora nam at numquam. Accusantium atque ab repudiandae,
-        adipisci quod cupiditate nisi molestias? Iure totam obcaecati dolorem
-        qui magni animi nisi nobis. Rem, repellat voluptate repudiandae minima
-        temporibus commodi quas a esse. Id necessitatibus cumque non illum
-        consequatur sed aspernatur fugit incidunt dolores deserunt corrupti
-        quibusdam labore molestias, quidem et nisi eos molestiae ipsum,
-        voluptatum similique rerum perferendis quia? Labore nostrum iure facilis
-        placeat perspiciatis quia dolor blanditiis velit non maxime sit sapiente
-        pariatur, architecto ratione, reiciendis sed tenetur, rem cupiditate
-        illum eum rerum modi in necessitatibus consectetur. Est deserunt at,
-        voluptatem adipisci impedit odio eveniet asperiores qui accusantium ipsa
-        blanditiis aspernatur nulla quo exercitationem! Commodi exercitationem
-        earum similique velit officiis, quisquam praesentium optio sunt rem,
-        aliquam est aperiam ipsum fugiat totam nisi. Omnis, natus vitae iure
-        odit maxime quos tempora nulla veritatis impedit nisi fuga voluptate!
-        Quam, aspernatur repellendus atque voluptate eveniet reiciendis enim hic
-        error perspiciatis rerum autem nesciunt, unde nobis officiis
-        reprehenderit nihil eligendi explicabo amet, voluptatum tempore? Sequi
-        fugiat nobis nam unde at modi eum dolorem officia numquam, sed dolor
-        molestiae commodi similique facere ullam velit cum recusandae ratione?
-        Neque in adipisci autem sequi molestiae, expedita ullam iste, error
-        molestias unde dolores rerum provident voluptatem obcaecati incidunt
-        distinctio placeat veritatis nisi consequatur facere sint nam inventore
-        odit. Placeat recusandae dolorum consectetur provident a. Iure
-        laboriosam eum repudiandae ipsa voluptatem, commodi possimus, deleniti
-        unde dolorem quis voluptate harum enim tenetur accusantium distinctio
-        sequi. Aut, laudantium iusto iure sit similique earum ratione deserunt
-        autem accusamus doloribus voluptate. Sint ab, blanditiis sapiente rerum
-        deleniti laboriosam a, ducimus nesciunt perspiciatis, maiores illo
-        deserunt earum ad eaque corrupti est assumenda voluptatem voluptate.
-        Delectus, rerum. Sit tenetur repudiandae quia ab fugiat et maiores at,
-        iste voluptatem amet vel odio tempora reiciendis error pariatur soluta
-        officia neque! Voluptatum vel deserunt, aliquam delectus amet minus
-        officiis omnis temporibus numquam soluta cum sequi aspernatur. Expedita
-        accusantium id pariatur quas corporis facilis libero omnis distinctio,
-        culpa modi iure nobis velit natus reprehenderit labore. Totam ex quia
-        minus ratione eaque corrupti perferendis suscipit soluta, quo ducimus
-        commodi at molestiae nulla? Iste molestiae similique, ab, tenetur
-        sapiente dolores consequuntur repellat ex tempore quo laborum vero iure.
-        Magni libero expedita et voluptates maiores illo nisi suscipit quam
-        nostrum ducimus, vero atque quidem molestiae. Iure enim amet odio
-        tempore! Ea corporis doloribus fuga, illo blanditiis amet error quasi
-        modi, molestiae, officia ipsum adipisci recusandae quaerat accusamus
-        temporibus. Officia exercitationem perspiciatis quidem magni, mollitia
-        impedit esse reprehenderit commodi aliquid ullam cupiditate est sit
-        deserunt obcaecati numquam quo laudantium natus reiciendis facilis?
-        Aspernatur commodi nihil provident omnis vitae nostrum illo explicabo
-        velit consectetur. Animi culpa nobis modi error quos, libero officiis,
-        aliquid, commodi corporis cumque laudantium! Iusto accusamus voluptatum
-        obcaecati voluptatibus, vero eius ipsa eveniet sequi ea omnis
-        dignissimos laudantium aliquid culpa, quasi voluptates dolores similique
-        ullam doloribus fuga nemo nisi! Soluta molestias eligendi, cum, magnam
-        veniam ad pariatur minus beatae dolore obcaecati suscipit exercitationem
-        numquam aliquam assumenda earum quas at harum non sint rerum placeat
-        dolorum inventore! Ullam ratione vitae ducimus repellat expedita, illo
-        alias facere accusantium autem perspiciatis odio cupiditate? Dignissimos
-        consequatur qui commodi praesentium unde. Consequuntur ipsam accusamus
-        iusto dignissimos asperiores obcaecati molestias quos corrupti.
-        Consectetur, ab delectus. Accusamus labore eveniet aspernatur nulla
-        culpa officiis nam quas incidunt odit adipisci totam quo, deleniti
-        minima voluptatem repudiandae ipsam libero rem autem eligendi itaque!
-        Nesciunt velit explicabo nam quod odio vel magni atque nobis, totam
-        placeat rem provident, dolor neque autem sapiente praesentium quisquam
-        saepe quia officia architecto ex corporis. Vel incidunt provident ab
-        ullam sunt fugiat, culpa quam porro eveniet libero vitae, tenetur unde
-        accusantium dicta laudantium cumque voluptatem. Eaque nisi rem dolore
-        molestias in? Quisquam repudiandae impedit ea saepe! Possimus fugiat
-        dolorum, repellat obcaecati, molestias omnis eum nobis iusto facilis
-        quae vel! Nulla, velit minima quasi quisquam non neque suscipit voluptas
-        numquam, blanditiis eius sed, earum harum beatae. Cumque qui magni, ea
-        facilis dignissimos molestiae in magnam facere natus sed, quia, totam ab
-        nobis recusandae! Assumenda, sequi minus debitis adipisci voluptas
-        accusantium! Nostrum quo perferendis sit saepe placeat magnam? Deserunt,
-        fugiat placeat enim amet optio, nisi porro voluptates voluptatum esse
-        expedita aut voluptate ullam, adipisci quibusdam? Perspiciatis
-        voluptatum assumenda deleniti alias distinctio, voluptatibus
-        reprehenderit nam exercitationem. Iusto sit tenetur aspernatur non,
-        voluptas qui animi molestiae, veritatis sed labore maxime quo hic alias
-        est vel corporis provident consectetur nostrum. Quos nam incidunt magnam
-        eius, sit delectus quam minus dicta soluta nulla similique sint
-        consequuntur nobis sapiente at deserunt, nisi unde provident officia
-        tempora. Fuga doloremque deserunt quas, eligendi tenetur dolore
-        blanditiis sed dolores placeat officia at, maxime quo est laboriosam?
-        Architecto atque molestiae earum perferendis accusantium mollitia
-        dignissimos temporibus veritatis similique sit quos veniam, praesentium
-        exercitationem in rerum suscipit nostrum, expedita consequatur? Quo
-        consequatur mollitia alias corporis sit, tenetur quidem animi soluta
-        dolorum error quasi porro, tempora nemo rem pariatur cum. Adipisci
-        magnam corrupti vel sed eos, voluptates cupiditate maiores ullam
-        molestiae soluta rerum expedita eveniet voluptatem a dignissimos
-        pariatur! Provident laudantium reprehenderit, magni consectetur sint
-        nulla dignissimos assumenda iure ipsa, cumque doloremque praesentium
-        facilis ea a alias dolores officia at est nesciunt iusto illo odio dolor
-        voluptates? Vel voluptatem quaerat eaque, eos repellat consequatur
-        quidem soluta earum laborum consequuntur cum quas incidunt hic delectus
-        sint laboriosam eligendi illo temporibus ullam laudantium nemo! A
-        officia doloremque porro minus, architecto nulla harum. Eaque rerum
-        accusantium quo laudantium dignissimos omnis quos in, iusto voluptatum
-        possimus maiores id repellendus. Iure, minus ab maxime, adipisci fugit,
-        alias unde ipsa quis eveniet ex laboriosam perferendis at. Temporibus
-        eaque nesciunt dolorem nihil. Illum soluta a id, architecto blanditiis
-        repellat eos quod ex consequatur molestiae, illo porro! Assumenda unde
-        molestiae magnam fuga perferendis adipisci ratione ea dignissimos,
-        sapiente fugit vitae corporis temporibus repellat odit aperiam alias
-        natus rerum possimus velit quos praesentium, ex, eligendi iste
-        quibusdam! Optio voluptatem maxime iure harum impedit incidunt velit
-        quaerat distinctio. Distinctio officiis esse repellendus quisquam ipsum,
-        aliquam qui dolorum ab numquam veniam quod laborum quo excepturi velit
-        repellat perferendis minus porro? Similique vitae dicta non architecto
-        enim saepe, assumenda fugiat eligendi obcaecati est adipisci aliquam nam
-        esse provident nisi sequi quisquam odio molestias possimus amet nesciunt
-        quae aut corporis. Ullam modi, dicta totam quae placeat officia, minus
-        ut laboriosam odit eligendi, sit nam provident dolorem dignissimos
-        recusandae est deleniti excepturi accusamus rerum cum pariatur. Dolorem,
-        atque possimus perspiciatis ipsum magnam ab optio assumenda ipsam
-        provident consectetur, laudantium illum necessitatibus dignissimos
-        officiis, temporibus impedit maiores harum quisquam labore consequuntur
-        ratione corrupti accusantium culpa! Recusandae temporibus molestias
-        architecto reiciendis corporis placeat eaque, in exercitationem quam.
-        Mollitia sint asperiores necessitatibus quasi dolorum sit! Autem vitae
-        voluptates dicta veniam quo ipsa assumenda quidem eveniet ratione ex
-        necessitatibus officiis qui vero nesciunt atque excepturi doloribus rem
-        ea rerum recusandae ipsum, sapiente aut. Delectus qui fuga excepturi
-        repellat animi recusandae voluptates eos temporibus? Distinctio vero
-        perspiciatis incidunt aliquid consequuntur cum animi, expedita
-        dignissimos, ad est aliquam deleniti tenetur illum sunt nobis libero
-        suscipit ipsum. Impedit magnam culpa esse, dolores dolor minima sunt?
-        Possimus laudantium dolorem accusantium sit, sapiente itaque harum
-        mollitia eos neque voluptate odio, praesentium modi tempora quod esse
-        officiis dolores recusandae velit sed aut, vel maxime! Quae quaerat
-        ducimus ut possimus cupiditate assumenda, dolores dolorem error numquam.
-        Consectetur, ipsam ducimus accusamus sunt eum minus error quas est, quo
-        perferendis maiores beatae inventore aut non libero ut, exercitationem
-        deserunt dolor hic dolorum animi cum amet. Officiis omnis totam aliquam
-        aperiam ipsa. Beatae porro blanditiis enim eum eaque consectetur illum.
-        Fugiat, tempore eaque eius neque, cupiditate repudiandae amet facilis
-        earum voluptas quod quo itaque adipisci, aliquid placeat veritatis
-        necessitatibus at dolores quas velit vero? Molestiae, atque ex?
-        Obcaecati nesciunt est sed, eaque eos, voluptates magni, ut repudiandae
-        ullam at dolorem recusandae id voluptate alias illum ea in consequatur
-        hic debitis perspiciatis minima. Sit maiores libero dicta id deserunt
-        animi voluptatem officiis dolorem debitis molestias consectetur at
-        similique labore, eos quae ullam illo. Similique culpa nulla vero
-        molestias dolores. Perferendis quae laudantium culpa eum enim neque
-        harum eveniet accusamus distinctio modi impedit voluptate quas possimus
-        nemo quasi, provident, sit perspiciatis ipsa ad dolores. Quod pariatur
-        aliquam, hic esse explicabo labore voluptate similique, accusantium
-        nobis quidem architecto ipsum, provident temporibus! Accusantium minima
-        ut magnam repudiandae aperiam nihil, consectetur tempora explicabo quia
-        impedit voluptates. Quae aliquid perspiciatis ea, aperiam unde dolores
-        doloribus inventore exercitationem repellendus possimus autem, at optio
-        quibusdam voluptatum?
-      </p>
+      <section>
+        <div class="container">
+          <div class="first-section">
+            <div class="heading-nxt-page">
+              <p>Акции</p>
+              <a href="#">Все продукты <i class="bx bx-chevron-right"></i></a>
+            </div>
+            <div class="cards">
+              <div class="first-card">
+                <img
+                  src="./assets/images/main-pics/card-blinchik.svg"
+                  alt="Image"
+                />
+                <div class="sale">-50%</div>
+                <div class="heart-like-button"></div>
+                <div class="price">
+                  <p>44,50 ₽</p>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="type">
+                  <p>С картой</p>
+                  <p>Обычная</p>
+                </div>
+                <p>Г/Ц Блинчики с мясом вес, Россия</p>
+                <div class="rating">
+                  <span onclick="gfg(1)" class="star">★ </span>
+                  <span onclick="gfg(2)" class="star">★ </span>
+                  <span onclick="gfg(3)" class="star">★ </span>
+                  <span onclick="gfg(4)" class="star">★ </span>
+                  <span onclick="gfg(5)" class="star">★ </span>
+                  <a id="output">Рейтинг: 0/5</a>
+                </div>
+                <button>В корзину</button>
+              </div>
+              <div class="first-card">
+                <img
+                  src="./assets/images/main-pics/card-milk.svg"
+                  alt="Image"
+                />
+                <div class="sale">-50%</div>
+                <div class="heart-like-button"></div>
+                <div class="price">
+                  <p>44,50 ₽</p>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="type">
+                  <p>С картой</p>
+                  <p>Обычная</p>
+                </div>
+                <p>Г/Ц Блинчики с мясом вес, Россия</p>
+                <div class="rating">
+                  <span onclick="gfg(1)" class="star">★ </span>
+                  <span onclick="gfg(2)" class="star">★ </span>
+                  <span onclick="gfg(3)" class="star">★ </span>
+                  <span onclick="gfg(4)" class="star">★ </span>
+                  <span onclick="gfg(5)" class="star">★ </span>
+                  <a id="output">Рейтинг: 0/5</a>
+                </div>
+                <button>В корзину</button>
+              </div>
+              <div class="first-card">
+                <img
+                  src="./assets/images/main-pics/card-kolbasa.svg"
+                  alt="Image"
+                />
+                <div class="sale">-50%</div>
+                <div class="heart-like-button"></div>
+                <div class="price">
+                  <p>44,50 ₽</p>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="type">
+                  <p>С картой</p>
+                  <p>Обычная</p>
+                </div>
+                <p>Г/Ц Блинчики с мясом вес, Россия</p>
+                <div class="rating">
+                  <span onclick="gfg(1)" class="star">★ </span>
+                  <span onclick="gfg(2)" class="star">★ </span>
+                  <span onclick="gfg(3)" class="star">★ </span>
+                  <span onclick="gfg(4)" class="star">★ </span>
+                  <span onclick="gfg(5)" class="star">★ </span>
+                  <a id="output">Рейтинг: 0/5</a>
+                </div>
+                <button>В корзину</button>
+              </div>
+              <div class="first-card">
+                <img
+                  src="./assets/images/main-pics/card-sosiska.svg"
+                  alt="Image"
+                />
+                <div class="sale">-50%</div>
+                <div class="heart-like-button"></div>
+                <div class="price">
+                  <p>44,50 ₽</p>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="type">
+                  <p>С картой</p>
+                  <p>Обычная</p>
+                </div>
+                <p>Г/Ц Блинчики с мясом вес, Россия</p>
+                <div class="rating">
+                  <span onclick="gfg(1)" class="star">★ </span>
+                  <span onclick="gfg(2)" class="star">★ </span>
+                  <span onclick="gfg(3)" class="star">★ </span>
+                  <span onclick="gfg(4)" class="star">★ </span>
+                  <span onclick="gfg(5)" class="star">★ </span>
+                  <a id="output">Рейтинг: 0/5</a>
+                </div>
+                <button>В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="first-section">
+            <div class="heading-nxt-page">
+              <p>Новинки</p>
+              <a href="#">Все продукты <i class="bx bx-chevron-right"></i></a>
+            </div>
+            <div class="cards">
+              <div class="first-card">
+                <img
+                  src="./assets/images/main-pics/kolbasa-long.svg"
+                  alt="Image"
+                />
+                <div class="heart-like-button"></div>
+                <div class="price">
+                  <p>44,50 ₽</p>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="type">
+                  <p>С картой</p>
+                  <p>Обычная</p>
+                </div>
+                <p>Г/Ц Блинчики с мясом вес, Россия</p>
+                <div class="rating">
+                  <span onclick="gfg(1)" class="star">★ </span>
+                  <span onclick="gfg(2)" class="star">★ </span>
+                  <span onclick="gfg(3)" class="star">★ </span>
+                  <span onclick="gfg(4)" class="star">★ </span>
+                  <span onclick="gfg(5)" class="star">★ </span>
+                  <a id="output">Рейтинг: 0/5</a>
+                </div>
+                <button>В корзину</button>
+              </div>
+
+              <div class="first-card">
+                <img
+                  src="./assets/images/main-pics/card-kolbasa.svg"
+                  alt="Image"
+                />
+                <div class="heart-like-button"></div>
+                <div class="price">
+                  <p>44,50 ₽</p>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="type">
+                  <p>С картой</p>
+                  <p>Обычная</p>
+                </div>
+                <p>Г/Ц Блинчики с мясом вес, Россия</p>
+                <div class="rating">
+                  <span onclick="gfg(1)" class="star">★ </span>
+                  <span onclick="gfg(2)" class="star">★ </span>
+                  <span onclick="gfg(3)" class="star">★ </span>
+                  <span onclick="gfg(4)" class="star">★ </span>
+                  <span onclick="gfg(5)" class="star">★ </span>
+                  <a id="output">Рейтинг: 0/5</a>
+                </div>
+                <button>В корзину</button>
+              </div>
+              <div class="first-card">
+                <img
+                  src="./assets/images/main-pics/card-sosiska.svg"
+                  alt="Image"
+                />
+                <div class="heart-like-button"></div>
+                <div class="price">
+                  <p>44,50 ₽</p>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="type">
+                  <p>С картой</p>
+                  <p>Обычная</p>
+                </div>
+                <p>Г/Ц Блинчики с мясом вес, Россия</p>
+                <div class="rating">
+                  <span onclick="gfg(1)" class="star">★ </span>
+                  <span onclick="gfg(2)" class="star">★ </span>
+                  <span onclick="gfg(3)" class="star">★ </span>
+                  <span onclick="gfg(4)" class="star">★ </span>
+                  <span onclick="gfg(5)" class="star">★ </span>
+                  <a id="output">Рейтинг: 0/5</a>
+                </div>
+                <button>В корзину</button>
+              </div>
+              <div class="first-card">
+                <img
+                  src="./assets/images/main-pics/card-milk.svg"
+                  alt="Image"
+                />
+                <div class="heart-like-button"></div>
+                <div class="price">
+                  <p>44,50 ₽</p>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="type">
+                  <p>С картой</p>
+                  <p>Обычная</p>
+                </div>
+                <p>Г/Ц Блинчики с мясом вес, Россия</p>
+                <div class="rating">
+                  <span onclick="gfg(1)" class="star">★ </span>
+                  <span onclick="gfg(2)" class="star">★ </span>
+                  <span onclick="gfg(3)" class="star">★ </span>
+                  <span onclick="gfg(4)" class="star">★ </span>
+                  <span onclick="gfg(5)" class="star">★ </span>
+                  <a id="output">Рейтинг: 0/5</a>
+                </div>
+                <button>В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="first-section">
+            <div class="heading-nxt-page">
+              <p>Покупали раньше</p>
+              <a href="#">Все продукты <i class="bx bx-chevron-right"></i></a>
+            </div>
+            <div class="cards">
+              <div class="first-card">
+                <img
+                  src="./assets/images/main-pics/pieceOfkolbasa.svg"
+                  alt="Image"
+                />
+                <div class="heart-like-button"></div>
+                <div class="price">
+                  <p>44,50 ₽</p>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="type">
+                  <p>С картой</p>
+                  <p>Обычная</p>
+                </div>
+                <p>Г/Ц Блинчики с мясом вес, Россия</p>
+                <div class="rating">
+                  <span onclick="gfg(1)" class="star">★ </span>
+                  <span onclick="gfg(2)" class="star">★ </span>
+                  <span onclick="gfg(3)" class="star">★ </span>
+                  <span onclick="gfg(4)" class="star">★ </span>
+                  <span onclick="gfg(5)" class="star">★ </span>
+                  <a id="output">Рейтинг: 0/5</a>
+                </div>
+                <button>В корзину</button>
+              </div>
+              <div class="first-card">
+                <img
+                  src="./assets/images/main-pics/kolbasa-long.svg"
+                  alt="Image"
+                />
+                <div class="heart-like-button"></div>
+                <div class="price">
+                  <p>44,50 ₽</p>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="type">
+                  <p>С картой</p>
+                  <p>Обычная</p>
+                </div>
+                <p>Г/Ц Блинчики с мясом вес, Россия</p>
+                <div class="rating">
+                  <span onclick="gfg(1)" class="star">★ </span>
+                  <span onclick="gfg(2)" class="star">★ </span>
+                  <span onclick="gfg(3)" class="star">★ </span>
+                  <span onclick="gfg(4)" class="star">★ </span>
+                  <span onclick="gfg(5)" class="star">★ </span>
+                  <a id="output">Рейтинг: 0/5</a>
+                </div>
+                <button>В корзину</button>
+              </div>
+              <div class="first-card">
+                <img
+                  src="./assets/images/main-pics/card-sosiska.svg"
+                  alt="Image"
+                />
+                <div class="heart-like-button"></div>
+                <div class="price">
+                  <p>44,50 ₽</p>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="type">
+                  <p>С картой</p>
+                  <p>Обычная</p>
+                </div>
+                <p>Г/Ц Блинчики с мясом вес, Россия</p>
+                <div class="rating">
+                  <span onclick="gfg(1)" class="star">★ </span>
+                  <span onclick="gfg(2)" class="star">★ </span>
+                  <span onclick="gfg(3)" class="star">★ </span>
+                  <span onclick="gfg(4)" class="star">★ </span>
+                  <span onclick="gfg(5)" class="star">★ </span>
+                  <a id="output">Рейтинг: 0/5</a>
+                </div>
+                <button>В корзину</button>
+              </div>
+              <div class="first-card">
+                <img
+                  src="./assets/images/main-pics/card-milk.svg"
+                  alt="Image"
+                />
+                <div class="heart-like-button"></div>
+                <div class="price">
+                  <p>44,50 ₽</p>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="type">
+                  <p>С картой</p>
+                  <p>Обычная</p>
+                </div>
+                <p>Г/Ц Блинчики с мясом вес, Россия</p>
+                <div class="rating">
+                  <span onclick="gfg(1)" class="star">★ </span>
+                  <span onclick="gfg(2)" class="star">★ </span>
+                  <span onclick="gfg(3)" class="star">★ </span>
+                  <span onclick="gfg(4)" class="star">★ </span>
+                  <span onclick="gfg(5)" class="star">★ </span>
+                  <a id="output">Рейтинг: 0/5</a>
+                </div>
+                <button>В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
+
+    <script src="./js/home.js"></script>
   </body>
 </html>
