@@ -1,3 +1,4 @@
+// STARS
 let stars = document.getElementsByClassName("star");
 let output = document.getElementById("output");
 function gfg(n) {
@@ -45,13 +46,8 @@ btnClose.addEventListener("click", function (e) {
 });
 
 // KATALOG
-const ktlgOpen = document.getElementById("katalog");
-const ktlgClose = document.getElementById("katalog");
-
-ktlgOpen.addEventListener("click", function (e) {
-  modal.classList.add("open");
-});
-
-ktlgClose.addEventListener("click", function (e) {
-  modal.classList.remove("open");
-});
+hamburger = document.querySelector(".katalog");
+hamburger.onclick = function () {
+  navBar = document.querySelector(".navbar");
+  navBar.classList.toggle("active");
+};

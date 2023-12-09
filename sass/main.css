@@ -43,13 +43,13 @@ body header nav .nav-items .btn-inp button {
   border: none;
   color: #fff;
   gap: 8px;
+  cursor: pointer;
 }
 body header nav .nav-items .btn-inp button .burger {
   position: relative;
   display: block;
   width: 24px;
   height: 24px;
-  cursor: pointer;
 }
 body header nav .nav-items .btn-inp button .burger .line {
   margin-top: 5px;
@@ -89,6 +89,64 @@ body header nav .nav-items .btn-inp input {
   body header nav .nav-items .btn-inp input {
     display: none;
   }
+}
+body header nav .nav-items .navbar {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 74px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  transition: 0.5s;
+  overflow: hidden;
+  background: #fff;
+  opacity: 0.9;
+  padding-bottom: 30px;
+}
+body header nav .nav-items .navbar .navbar-items {
+  padding-left: 22%;
+  padding-right: 13%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  row-gap: 16px;
+}
+@media only screen and (max-width: 1179px) {
+  body header nav .nav-items .navbar .navbar-items {
+    align-items: center;
+    justify-content: center;
+    padding-left: 18%;
+    padding-right: 0%;
+  }
+}
+@media only screen and (max-width: 950px) {
+  body header nav .nav-items .navbar .navbar-items {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+body header nav .nav-items .navbar .navbar-items a {
+  margin-top: 32px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  background: #fff;
+  color: #70c05b;
+  border-radius: 50px;
+  border: 2px solid #70c05b;
+  text-decoration: none;
+  transition: 0.4s;
+}
+body header nav .nav-items .navbar .navbar-items a:hover {
+  color: #fff;
+  background: #70c05b;
+}
+body header nav .nav-items .navbar .active {
+  display: block;
 }
 body header nav .nav-items .choose-collect {
   display: flex;
